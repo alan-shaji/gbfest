@@ -29,7 +29,7 @@ const Volunteer = () => {
 
         {/* Right: Image */}
         <div className="volunteer-image">
-          <img src="/volunteer.png" alt="Global Fest Volunteers" />
+          <img src="/gbfest/volunteer.png" alt="Global Fest Volunteers" />
         </div>
       </div>
     </section>

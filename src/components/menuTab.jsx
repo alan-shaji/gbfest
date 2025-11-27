@@ -47,7 +47,7 @@ function MenuTab() {
   return (
     <nav className="menu-tab">
       <div className="menu-logo">
-        <img src="/logo.png" alt="Logo" />
+        <img src="/gbfest/logo.png" alt="Logo" />
         <span>Global Fest 2026</span>
       </div>
 

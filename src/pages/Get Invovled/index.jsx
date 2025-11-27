@@ -12,7 +12,7 @@ const GetInvolved = () => {
 
       {/* Sponsorship (image right) */}
       <div className="involved-row row-reverse">
-        <img src="/sponsor.png" alt="Sponsorship" />
+        <img src="/gbfest/sponsor.png" alt="Sponsorship" />
         <div className="involved-content">
           <h2>Sponsorship</h2>
           <p>
@@ -33,7 +33,7 @@ const GetInvolved = () => {
 
       {/* Vendors (image left) */}
       <div className="involved-row">
-        <img src="/vendor.jpg" alt="Vendors" />
+        <img src="/gbfest/vendor.jpg" alt="Vendors" />
         <div className="involved-content">
           <h2>Vendors</h2>
           <p>

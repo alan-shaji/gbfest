@@ -73,12 +73,12 @@ const Footer = () => {
         <div className="footer-left">
           <div className="footer-logo">
             <span className="footer-caption">Organized by</span>
-            <img src="/iyc-logo.png" alt="International Youth Canada" />
+            <img src="/gbfest/iyc-logo.png" alt="International Youth Canada" />
             <span className="footer-caption">International Youth Canada</span>
           </div>
           <div className="footer-logo">
             <span className="footer-caption">Powered by</span>
-            <img src="/levitate-logo.png" alt="Levitate Entertainment" />
+            <img src="/gbfest/levitate-logo.png" alt="Levitate Entertainment" />
             <span className="footer-caption">Levitate Entertainment</span>
           </div>
         </div>
@@ -114,7 +114,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <hr />
         <div className="footer-logo">
-          <img src="/logo.png" alt="Global Fest Logo" />
+          <img src="/gbfest/logo.png" alt="Global Fest Logo" />
         </div>
         <p>© 2026 Global Fest Toronto. All rights reserved.</p>
       </div>

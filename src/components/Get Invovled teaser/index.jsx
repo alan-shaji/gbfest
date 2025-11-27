@@ -22,7 +22,7 @@ const GetInvolvedTeaser = () => {
 
       <div className="promo-columns">
         <div className="promo-column">
-          <img src="/food vendor.jpg" alt="Food Vendors" />
+          <img src="/gbfest/food vendor.jpg" alt="Food Vendors" />
           <h3>Food Vendors</h3>
           <p>
             Become a food vendor and showcase global fusion dishes — from Asian street eats
@@ -32,7 +32,7 @@ const GetInvolvedTeaser = () => {
         </div>
 
         <div className="promo-column">
-          <img src="/sponsor.png" alt="Sponsorship Opportunities" />
+          <img src="/gbfest/sponsor.png" alt="Sponsorship Opportunities" />
           <h3>Sponsorship Opportunities</h3>
           <p>
             Gain visibility through stage presence, digital campaigns, and on-site activations.
@@ -42,7 +42,7 @@ const GetInvolvedTeaser = () => {
         </div>
 
         <div className="promo-column">
-          <img src="/cultural.jpg" alt="Cultural Performances" />
+          <img src="/gbfest/cultural.jpg" alt="Cultural Performances" />
           <h3>Cultural Performances</h3>
           <p>
             Join our lineup of live music, dance, and cultural showcases that blend tradition
