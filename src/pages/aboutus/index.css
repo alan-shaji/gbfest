@@ -1,0 +1,31 @@
+.about-detail-page {
+  padding: 6rem 2rem;
+  background: #0b132b;
+  color: #e0e6ed;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-detail-page h1 {
+  font-size: 2.5rem;
+  color: #6fffe9;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about-detail-page p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-detail-page h1 {
+    font-size: 2rem;
+  }
+
+  .about-detail-page p {
+    font-size: 1rem;
+  }
+}

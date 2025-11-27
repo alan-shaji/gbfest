@@ -1,0 +1,109 @@
+.get-involved-teaser {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  text-align: center;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.get-involved-teaser h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0b132b;
+}
+
+.get-involved-teaser p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* ✅ Three-column layout */
+.promo-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* ✅ Each tile is a flex column */
+.promo-column {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.promo-column:hover {
+  transform: translateY(-4px);
+}
+
+/* ✅ Uniform image height */
+.promo-column img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+/* ✅ Text styling */
+.promo-column h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+  color: #3a506b;
+  text-align: center;
+}
+
+.promo-column p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* ✅ Theme button */
+.teaser-btn {
+  background: linear-gradient(to right, #0b132b, #3a506b);
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* ✅ Centered button inside each tile */
+.promo-column .teaser-btn {
+  margin-top: auto;
+  align-self: center;
+}
+
+/* ✅ CTA button at bottom */
+.explore-btn {
+  margin-top: 1rem;
+}
+
+/* ✅ Responsive layout */
+@media (max-width: 900px) {
+  .promo-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo-column {
+    width: 100%;
+    max-width: 90%;
+  }
+}

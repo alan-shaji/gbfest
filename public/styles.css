@@ -1,0 +1,75 @@
+:root {
+  --brand-bg: #0b132b;        /* deep navy */
+  --brand-accent: #6fffe9;    /* mint accent */
+  --brand-text: #e0e6ed;      /* light text */
+  --brand-hover: #5ff3de;     /* hover accent */
+  --brand-shadow: rgba(0, 0, 0, 0.2);
+}
+
+/* Sticky navbar base */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--brand-bg) !important;
+  box-shadow: 0 8px 24px var(--brand-shadow);
+}
+
+/* Branding / logo */
+.navbar-brand {
+  color: var(--brand-text) !important;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+  filter: drop-shadow(0 2px 4px var(--brand-shadow));
+}
+
+/* Nav links */
+.nav-link {
+  color: var(--brand-text) !important;
+  font-weight: 500;
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+.nav-link:hover {
+  color: var(--brand-accent) !important;
+  transform: translateY(-1px);
+}
+
+.nav-link.active {
+  color: var(--brand-accent) !important;
+}
+
+/* CTA button */
+.btn-accent {
+  background: var(--brand-accent);
+  color: #0b132b;
+  border: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.btn-accent:hover {
+  background: var(--brand-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px var(--brand-shadow);
+}
+
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Spacer to offset sticky navbar height */
+main {
+  padding-top: 80px;
+}

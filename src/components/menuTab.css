@@ -1,0 +1,118 @@
+.menu-tab {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0b132b;
+  color: #e0e6ed;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2.5rem; /* balanced padding */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+/* Logo styling */
+.menu-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+}
+
+.menu-logo img {
+  height: 95px; /* bigger logo */
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none; /* hidden on desktop */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: auto; /* pushes to far right */
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #e0e6ed;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animate into X when open */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Nav links desktop */
+.menu-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+  padding-right: 6rem; /* keep away from edge */
+}
+
+.menu-links a {
+  color: #e0e6ed;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.menu-links a:hover {
+  color: #6fffe9;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; /* show hamburger */
+    padding-right: 4rem;
+  }
+
+  .menu-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #0b132b;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 2.5rem;
+    gap: 1rem;
+    width: 100vw; /* full viewport width */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  .menu-links.active {
+    display: flex;
+    animation: slideDown 0.3s ease forwards;
+  }
+}
+
+
+/* Slide-down animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

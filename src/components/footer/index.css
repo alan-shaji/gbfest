@@ -1,0 +1,140 @@
+.footer {
+  background: #ffffff;
+  color: #0b132b;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 2rem 3rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+/* Left: Logos with captions above */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ✅ center logos + captions */
+  gap: 1rem;
+  flex: 1;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column; /* stack caption above logo */
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-caption {
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.footer-logo img {
+  height: 40px;
+  width: auto;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Center: Contact info */
+.footer-center {
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.footer-heading {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+/* Right: Social + CTA */
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ✅ center button + icons */
+  gap: 1rem;
+  flex: 1;
+}
+
+.footer-social {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 2rem; /* ✅ increased size (default was 1.2rem) */
+}
+
+.footer-social a {
+  color: #0b132b;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #4fdac5;
+  transform: scale(1.1);
+}
+
+
+.join-btn {
+  background: linear-gradient(to right, #0b132b, #3a506b);
+  color: #ffffff;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.join-btn:hover {
+  background: linear-gradient(to right, #3a506b, #0b132b);
+}
+
+/* Bottom copyright */
+.footer-bottom {
+  max-width: 1200px;
+  margin: 2rem auto 0 auto;
+  text-align: center;
+}
+
+.footer-bottom hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.footer-bottom p {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .footer-left,
+  .footer-right {
+    align-items: center;
+  }
+
+  .join-btn {
+    width: 80%;
+    max-width: 250px;
+  }
+}
