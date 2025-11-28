@@ -67,7 +67,7 @@ function MenuTab() {
         <li><Link to="/about">About Us</Link></li>
         <li><Link to="/program">Program</Link></li>
         <li><Link to="/getinvolved">Get Involved</Link></li>
-        <li><Link to="/contact">Contact Us</Link></li>
+        <li><Link to="/contactUs">Contact Us</Link></li>
       </ul>
     </nav>
   );

@@ -45,6 +45,7 @@ import Home from "./pages/home/";
 import AboutUsDetail from "./pages/aboutus/";
 import VolunteerPage from "./pages/volunteer page";
 import GetInvolved from "./pages/Get Invovled";
+import ContactUs from "./components/Contact Us";
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
         <Route path="about" element={<AboutUsDetail />} />
         <Route path="volunteer" element={<VolunteerPage />} />
         <Route path="/getinvolved" element={<GetInvolved />} />
+        <Route path="contactUs" element={<ContactUs />} />
         {/* add more pages here */}
       </Route>
     </Routes>

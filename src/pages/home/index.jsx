@@ -8,6 +8,7 @@ import Countdown from "../../components/Countdown";
 import GetInvolvedTeaser from "../../components/Get Invovled teaser";
 import FAQ from "../../components/FAQ";
 import EventLocation from "../../components/location";
+import ContactUs from "../../components/Contact Us";
 
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
       <FAQ />
       <EventLocation />
       <Volunteer />
+      <ContactUs />
       <section className="home-section">
         {/* Blank white section for now */}
       </section>
