@@ -93,7 +93,7 @@ const Footer = () => {
         {/* Right social + button */}
         <div className="footer-right">
           <div className="footer-social">
-            <a href="https://instagram.com" target="https://www.instagram.com/globalfestcanada/" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/globalfestcanada/" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">

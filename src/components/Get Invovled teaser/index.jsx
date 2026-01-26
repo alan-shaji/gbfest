@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./index.css";
 
 const GetInvolvedTeaser = () => {
@@ -34,7 +35,13 @@ const GetInvolvedTeaser = () => {
           <p>
             Gain visibility through stage presence, digital campaigns, and on-site activations.Celebrate diversity and community at a vibrant multicultural festival in Canada
           </p>
-          <button className="teaser-btn">Become a Partner</button>
+          
+          <button
+            className="teaser-btn"
+            onClick={() => navigate("partner")}
+          >
+            Become as a Partner
+          </button>
         </div>
 
         <div className="promo-column">

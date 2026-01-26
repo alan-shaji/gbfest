@@ -95,8 +95,8 @@ const ContactUs = () => {
             We’d love to get more input from you! Whether you have questions,
             feedback, or ideas to make GBFest even better, we’re here to listen.
           </p>
-          <p><strong>Phone:</strong> (416) 555-1234</p>
-          <p><strong>Email:</strong> info@gbfest.com</p>
+          <p><strong>Phone:</strong> +1 (705) 930-6692</p>
+          <p><strong>Email:</strong> contact@canadaglobalfest.ca</p>
           <p>
             Your voice helps us shape GBFest into something truly special —
             don’t hesitate to reach out.

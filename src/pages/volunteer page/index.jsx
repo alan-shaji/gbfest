@@ -1,629 +1,294 @@
-// import React, { useState } from "react";
-// import MenuTab from "../../components/menuTab";
-// import "./index.css";
-
-// const VolunteerPage = () => {
-//   const [formData, setFormData] = useState({
-//     name: "",
-//     email: "",
-//     phone: "",
-//     interests: "",
-//     availability: "",
-//   });
-
-//   const handleChange = (e) => {
-//     const { name, value } = e.target;
-//     setFormData((prev) => ({ ...prev, [name]: value }));
-//   };
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     console.log("Volunteer Info Submitted:", formData);
-//     alert("Thank you for signing up as a volunteer!");
-//   };
-
-//   return (
-//     <div>
-//       <MenuTab />
-//       <section className="volunteer-page">
-//         <h1>Volunteer Form</h1>
-//         <p className="intro-text">
-//           Be part of Global Fest 2026! Fill out the form below and join our team
-//           of passionate volunteers.
-//         </p>
-
-//         <form className="volunteer-form" onSubmit={handleSubmit}>
-//           <label>
-//             Full Name
-//             <input
-//               type="text"
-//               name="name"
-//               value={formData.name}
-//               onChange={handleChange}
-//               required
-//             />
-//           </label>
-
-//           <label>
-//             Email Address
-//             <input
-//               type="email"
-//               name="email"
-//               value={formData.email}
-//               onChange={handleChange}
-//               required
-//             />
-//           </label>
-
-//           <label>
-//             Phone Number
-//             <input
-//               type="tel"
-//               name="phone"
-//               value={formData.phone}
-//               onChange={handleChange}
-//             />
-//           </label>
-
-//           <label>
-//             Areas of Interest
-//             <textarea
-//               name="interests"
-//               value={formData.interests}
-//               onChange={handleChange}
-//               placeholder="e.g. logistics, stage setup, guest support"
-//             />
-//           </label>
-
-//           <label>
-//             Availability
-//             <select
-//               name="availability"
-//               value={formData.availability}
-//               onChange={handleChange}
-//             >
-//               <option value="">Select...</option>
-//               <option value="weekdays">Weekdays</option>
-//               <option value="weekends">Weekends</option>
-//               <option value="full-event">Full Event</option>
-//             </select>
-//           </label>
-
-//           <button type="submit" className="submit-btn">
-//             Submit
-//           </button>
-//         </form>
-//       </section>
-//     </div>
-//   );
-// };
-
-// export default VolunteerPage;
-
-
-
-// import React, { useState } from "react";
-// import MenuTab from "../../components/menuTab";
-// import "./index.css";
-
-// const VolunteerPage = () => {
-//   const [formData, setFormData] = useState({
-//     name: "",
-//     email: "",
-//     phone: "",
-//     availability: "",
-//     interests: [],
-//     preEventParticipation: "",
-//     preEventAvailability: "",
-//     motivation: "",
-//   });
-
-//   const handleChange = (e) => {
-//     const { name, value } = e.target;
-//     setFormData((prev) => ({ ...prev, [name]: value }));
-//   };
-
-//   const handleCheckboxChange = (e) => {
-//     const { value, checked } = e.target;
-//     setFormData((prev) => {
-//       if (checked) {
-//         return { ...prev, interests: [...prev.interests, value] };
-//       } else {
-//         return {
-//           ...prev,
-//           interests: prev.interests.filter((interest) => interest !== value),
-//         };
-//       }
-//     });
-//   };
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     console.log("Volunteer Info Submitted:", formData);
-//     alert("Thank you for signing up as a volunteer!");
-//   };
-
-//   return (
-//     <div>
-//       <MenuTab />
-//       <section className="volunteer-page">
-//         <h1>Volunteer Form</h1>
-//         <p className="intro-text">
-//           Be part of Global Fest 2026! Fill out the form below and join our team
-//           of passionate volunteers.
-//         </p>
-
-//         <form className="volunteer-form" onSubmit={handleSubmit}>
-//           {/* Basic Info */}
-//           <label>
-//             Full Name
-//             <input
-//               type="text"
-//               name="name"
-//               value={formData.name}
-//               onChange={handleChange}
-//               required
-//             />
-//           </label>
-
-//           <label>
-//             Email Address
-//             <input
-//               type="email"
-//               name="email"
-//               value={formData.email}
-//               onChange={handleChange}
-//               required
-//             />
-//           </label>
-
-//           <label>
-//             Phone Number
-//             <input
-//               type="tel"
-//               name="phone"
-//               value={formData.phone}
-//               onChange={handleChange}
-//             />
-//           </label>
-
-//           {/* Availability */}
-//           <label>
-//             Availability During Event
-//             <select
-//               name="availability"
-//               value={formData.availability}
-//               onChange={handleChange}
-//               required
-//             >
-//               <option value="">Select...</option>
-//               <option value="full-event">Full Event</option>
-//               <option value="morning-only">Morning Only</option>
-//               <option value="evening-only">Evening Only</option>
-//             </select>
-//           </label>
-
-//           {/* Areas of Interest */}
-//           <fieldset className="checkbox-group">
-//             <legend>Areas of Interest</legend>
-//             <label>
-//               <input
-//                 type="checkbox"
-//                 value="logistics"
-//                 onChange={handleCheckboxChange}
-//               />
-//               Logistics
-//             </label>
-//             <label>
-//               <input
-//                 type="checkbox"
-//                 value="stage-setup"
-//                 onChange={handleCheckboxChange}
-//               />
-//               Stage Setup
-//             </label>
-//             <label>
-//               <input
-//                 type="checkbox"
-//                 value="guest-support"
-//                 onChange={handleCheckboxChange}
-//               />
-//               Guest Support
-//             </label>
-//             <label>
-//               <input
-//                 type="checkbox"
-//                 value="cultural-activities"
-//                 onChange={handleCheckboxChange}
-//               />
-//               Cultural Activities
-//             </label>
-//           </fieldset>
-
-//           {/* Pre-event participation */}
-//           <label>
-//             Are you interested in participating before the event?
-//             <select
-//               name="preEventParticipation"
-//               value={formData.preEventParticipation}
-//               onChange={handleChange}
-//               required
-//             >
-//               <option value="">Select...</option>
-//               <option value="yes">Yes</option>
-//               <option value="no">No</option>
-//             </select>
-//           </label>
-
-//           {formData.preEventParticipation === "yes" && (
-//             <label>
-//               Pre-Event Availability
-//               <select
-//                 name="preEventAvailability"
-//                 value={formData.preEventAvailability}
-//                 onChange={handleChange}
-//               >
-//                 <option value="">Select...</option>
-//                 <option value="weekdays">Weekdays</option>
-//                 <option value="weekends">Weekends</option>
-//               </select>
-//             </label>
-//           )}
-
-//           {/* Motivation */}
-//           <label>
-//             Why do you want to be a part of this event?
-//             <textarea
-//               name="motivation"
-//               value={formData.motivation}
-//               onChange={handleChange}
-//               placeholder="Share your motivation..."
-//               required
-//             />
-//           </label>
-
-//           <button type="submit" className="submit-btn">
-//             Submit
-//           </button>
-//         </form>
-//       </section>
-//     </div>
-//   );
-// };
-
-// export default VolunteerPage;
-
-
-
-
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import MenuTab from "../../components/menuTab";
-import { useNavigate, Link } from "react-router-dom";
 import "./index.css";
 
 const VolunteerPage = () => {
-
-  const navigate = useNavigate();
-  const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
-    availability: "",
-    interests: [],
-    preEventParticipation: "",
-    preEventAvailability: "",
+    age: "",
+    city: "",
+    position: "",
+    rolePreference: "",
     motivation: "",
   });
 
+  const [errors, setErrors] = useState({});
+  const [success, setSuccess] = useState(false);
+
+  const GOOGLE_SHEETS_URL = "GOOGLE_SCRIPT_URL";
+  const AWS_SES_URL = "AWS_API_GATEWAY_URL";
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const validateField = (name, value) => {
+    let error = "";
+
+    if (name === "name") {
+      if (!value.trim()) error = "Full name is required";
+      else if (/[0-9]/.test(value)) error = "Name cannot contain numbers";
+    }
+
+    if (name === "email") {
+      if (!value.trim()) error = "Email is required";
+      else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value))
+        error = "Invalid email format";
+    }
+
+    if (name === "phone") {
+      if (!/^[0-9]{10}$/.test(value))
+        error = "Phone number must be exactly 10 digits";
+    }
+
+    if (name === "age") {
+      if (!/^[0-9]{2}$/.test(value)) error = "Enter a valid age (2 digits)";
+    }
+
+    if (name === "city" && !value.trim()) {
+      error = "City / Location is required";
+    }
+
+    if (name === "position" && !value.trim()) {
+      error = "Please select a position";
+    }
+
+    if (name === "rolePreference" && !value.trim()) {
+      error = "Please select a role preference";
+    }
+
+    setErrors((prev) => ({ ...prev, [name]: error }));
+    return error;
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
+
+    if (name === "phone" || name === "age") {
+      if (/[^0-9]/.test(value)) return;
+    }
+
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleCheckboxChange = (e) => {
-    const { value, checked } = e.target;
-    setFormData((prev) => {
-      if (checked) {
-        return { ...prev, interests: [...prev.interests, value] };
-      } else {
-        return {
-          ...prev,
-          interests: prev.interests.filter((interest) => interest !== value),
-        };
-      }
-    });
+  const handleBlur = (e) => {
+    validateField(e.target.name, e.target.value);
   };
 
-  const nextStep = () => setStep((prev) => prev + 1);
-  const prevStep = () => setStep((prev) => prev - 1);
-  const [submitted, setSubmitted] = useState(false);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
+    const newErrors = {};
+    Object.entries(formData).forEach(([key, value]) => {
+      const err = validateField(key, value);
+      if (err) newErrors[key] = err;
+    });
 
-  const handleSubmit = (e) => {
-  e.preventDefault();
-  console.log("Volunteer Info Submitted:", formData);
-  setSubmitted(true); // ✅ show confirmation screen
-};
+    setErrors((prev) => ({ ...prev, ...newErrors }));
 
+    const hasErrors = Object.values({ ...errors, ...newErrors }).some(
+      (err) => err
+    );
+
+    if (hasErrors) return;
+
+    try {
+      await fetch(GOOGLE_SHEETS_URL, {
+        method: "POST",
+        body: JSON.stringify(formData),
+      });
+
+      await fetch(AWS_SES_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      setSuccess(true);
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        age: "",
+        city: "",
+        position: "",
+        rolePreference: "",
+        motivation: "",
+      });
+
+      setErrors({});
+    } catch (err) {
+      console.error("Submission error:", err);
+    }
+  };
 
   return (
     <div>
       <MenuTab />
+
       <section className="volunteer-page">
-  {!submitted && (
-    <>
-      <h1>Volunteer Form</h1>
-      <p className="intro-text">
-        Be part of Global Fest 2026! Follow the steps below to join our team.
-      </p>
-    </>
-  )}
+        {!success && (
+          <>
+            <h1>Volunteer Application</h1>
+            <p className="intro-text">
+              Join Global Fest 2026 and be part of an incredible experience.
+            </p>
 
-  {submitted ? (
-    <div className="confirmation-screen">
-      <h2>Thank you for signing up!</h2>
-      <p>We appreciate your interest in Global Fest 2026.</p>
-      <Link to="/" className="submit-btn">Return to Home</Link>
-    </div>
-  ) : (
-        <form className="volunteer-form" onSubmit={handleSubmit}>
-          {/* Step 1: Basic Info */}
-          {step === 1 && (
-            <>
-              <label>
-                Full Name
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
-              </label>
-              <label>
-                Email Address
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
-              </label>
-              <label>
-                Phone Number
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                />
-              </label>
-              <button type="button" className="submit-btn" onClick={nextStep}>
-                Next
-              </button>
-            </>
-          )}
+            <ul className="benefits-list">
+              <li><strong>Build Your Network:</strong> Connect with creatives and pros.</li>
+              <li><strong>Real-World Experience:</strong> Learn large-scale event execution.</li>
+              <li><strong>Skill Development:</strong> Strengthen leadership and technical abilities.</li>
+              <li><strong>Reference Letter:</strong> Earn a personalized letter upon completion.</li>
+            </ul>
+          </>
+        )}
 
-          {/* Step 2: Availability + Interests */}
-          {step === 2 && (
-            <>
-              <label>
-                Availability During Event
-                <div className="radio-group">
-                  <label>
-                    <input
-                      type="radio"
-                      name="availability"
-                      value="full-event"
-                      checked={formData.availability === "full-event"}
-                      onChange={handleChange}
-                    />
-                    Full Event
-                  </label>
-                  <label>
-                    <input
-                      type="radio"
-                      name="availability"
-                      value="morning-only"
-                      checked={formData.availability === "morning-only"}
-                      onChange={handleChange}
-                    />
-                    Morning Only
-                  </label>
-                  <label>
-                    <input
-                      type="radio"
-                      name="availability"
-                      value="evening-only"
-                      checked={formData.availability === "evening-only"}
-                      onChange={handleChange}
-                    />
-                    Evening Only
-                  </label>
-                </div>
-              </label>
+        {success && (
+          <div className="success-box">
+            <h2>Thank you for signing up!</h2>
+            <p>We appreciate your interest in Global Fest 2026.</p>
+          </div>
+        )}
 
-              <fieldset className="checkbox-group">
-                <legend>Areas of Interest</legend>
+        {!success && (
+         <div className="form-shadow-box">
+  <form className="volunteer-form" onSubmit={handleSubmit}>
+
+            <label>
+              Full Name *
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                onBlur={handleBlur}
+              />
+              {errors.name && <span className="error">{errors.name}</span>}
+            </label>
+
+            <label>
+              Email Address *
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                onBlur={handleBlur}
+              />
+              {errors.email && <span className="error">{errors.email}</span>}
+            </label>
+
+            <label>
+              Phone Number *
+              <input
+                type="tel"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                onBlur={handleBlur}
+              />
+              {errors.phone && <span className="error">{errors.phone}</span>}
+            </label>
+
+            <label>
+              Age *
+              <input
+                type="text"
+                name="age"
+                value={formData.age}
+                onChange={handleChange}
+                onBlur={handleBlur}
+              />
+              {errors.age && <span className="error">{errors.age}</span>}
+            </label>
+
+            <label>
+              City / Location *
+              <input
+                type="text"
+                name="city"
+                value={formData.city}
+                onChange={handleChange}
+                onBlur={handleBlur}
+              />
+              {errors.city && <span className="error">{errors.city}</span>}
+            </label>
+
+            <label>
+              Which position interests you most? *
+              <select
+                name="position"
+                value={formData.position}
+                onChange={handleChange}
+                onBlur={handleBlur}
+              >
+                <option value="">— Select a Position —</option>
+                <option value="logistics">Logistics</option>
+                <option value="stage-setup">Stage Setup</option>
+                <option value="guest-support">Guest Support</option>
+                <option value="cultural-activities">Cultural Activities</option>
+              </select>
+              {errors.position && <span className="error">{errors.position}</span>}
+            </label>
+
+            <label>
+              Role Preference *
+              <div className="radio-group">
                 <label>
                   <input
-                    type="checkbox"
-                    value="logistics"
-                    onChange={handleCheckboxChange}
+                    type="radio"
+                    name="rolePreference"
+                    value="unpaid"
+                    checked={formData.rolePreference === "unpaid"}
+                    onChange={handleChange}
                   />
-                  Logistics
+                  I am open to an unpaid role.
                 </label>
-                <label>
-                  <input
-                    type="checkbox"
-                    value="stage-setup"
-                    onChange={handleCheckboxChange}
-                  />
-                  Stage Setup
-                </label>
-                <label>
-                  <input
-                    type="checkbox"
-                    value="guest-support"
-                    onChange={handleCheckboxChange}
-                  />
-                  Guest Support
-                </label>
-                <label>
-                  <input
-                    type="checkbox"
-                    value="cultural-activities"
-                    onChange={handleCheckboxChange}
-                  />
-                  Cultural Activities
-                </label>
-              </fieldset>
 
-              <div className="form-nav">
-                <button type="button" className="submit-btn" onClick={prevStep}>
-                  Back
-                </button>
-                <button type="button" className="submit-btn" onClick={nextStep}>
-                  Next
-                </button>
+                <label>
+                  <input
+                    type="radio"
+                    name="rolePreference"
+                    value="paid"
+                    checked={formData.rolePreference === "paid"}
+                    onChange={handleChange}
+                  />
+                  I am only looking for a paid role.
+                </label>
+
+                <label>
+                  <input
+                    type="radio"
+                    name="rolePreference"
+                    value="both"
+                    checked={formData.rolePreference === "both"}
+                    onChange={handleChange}
+                  />
+                  I am open to both.
+                </label>
               </div>
-            </>
-          )}
-
-          {/* Step 3: Pre-event + Motivation */}
-          {step === 3 && (
-            <>
-              <label>
-                Are you interested in participating before the event?
-                <div className="radio-group">
-                  <label>
-                    <input
-                      type="radio"
-                      name="preEventParticipation"
-                      value="yes"
-                      checked={formData.preEventParticipation === "yes"}
-                      onChange={handleChange}
-                    />
-                    Yes
-                  </label>
-                  <label>
-                    <input
-                      type="radio"
-                      name="preEventParticipation"
-                      value="no"
-                      checked={formData.preEventParticipation === "no"}
-                      onChange={handleChange}
-                    />
-                    No
-                  </label>
-                </div>
-              </label>
-
-              {formData.preEventParticipation === "yes" && (
-                <label>
-                  Pre-Event Availability
-                  <div className="radio-group">
-                    <label>
-                      <input
-                        type="radio"
-                        name="preEventAvailability"
-                        value="weekdays"
-                        checked={formData.preEventAvailability === "weekdays"}
-                        onChange={handleChange}
-                      />
-                      Weekdays
-                    </label>
-                    <label>
-                      <input
-                        type="radio"
-                        name="preEventAvailability"
-                        value="weekends"
-                        checked={formData.preEventAvailability === "weekends"}
-                        onChange={handleChange}
-                      />
-                      Weekends
-                    </label>
-                  </div>
-                </label>
+              {errors.rolePreference && (
+                <span className="error">{errors.rolePreference}</span>
               )}
+            </label>
 
-              {/* <label>
-                Why do you want to be a part of this event?
-                <textarea
-                  name="motivation"
-                  value={formData.motivation}
-                  onChange={handleChange}
-                  required
-                />
-              </label> */}
-
-              <div className="form-nav">
-                <button type="button" className="submit-btn" onClick={prevStep}>
-                  Back
-                </button>
-                <button type="button" className="submit-btn" onClick={nextStep}>
-                  Next
-                </button>
-              </div>
-            </>
-          )}
-
-          {/* Step 4: Motivation */}
-          {step === 4 && (
-            <>
-                <div className="motivation-box">
-                 <label className="motivation-label">
-                    Why do you want to be a part of this event?
-                </label>
-            <textarea
+            <label>
+              Why are you a great fit? 
+              <textarea
                 name="motivation"
                 value={formData.motivation}
                 onChange={handleChange}
-                required
-            />
-        </div>
+              />
+            </label>
 
-    <div className="form-nav">
-      <button type="button" className="submit-btn" onClick={prevStep}>
-        Back
-      </button>
-      <button type="button" className="submit-btn" onClick={nextStep}>
-        Next
-      </button>
-    </div>
-  </>
-)}
-
-
-
-          {/* Step 4: Review */}
-          {step === 5 && (
-            <div className="review-section">
-              <h2>Review Your Information</h2>
-              <p><strong>Name:</strong> {formData.name}</p>
-              <p><strong>Email:</strong> {formData.email}</p>
-              <p><strong>Phone:</strong> {formData.phone}</p>
-              <p><strong>Availability:</strong> {formData.availability}</p>
-              <p><strong>Interests:</strong> {formData.interests.join(", ")}</p>
-              <p><strong>Pre-Event Participation:</strong> {formData.preEventParticipation}</p>
-              {formData.preEventParticipation === "yes" && (
-                <p><strong>Pre-Event Availability:</strong> {formData.preEventAvailability}</p>
-              )}
-              <p><strong>Motivation:</strong> {formData.motivation}</p>
-
-              <div className="form-nav">
-                <button type="button" className="submit-btn" onClick={prevStep}>
-                  Back
-                </button>
-                <button type="submit" className="submit-btn">
-                  Submit
-                </button>
-              </div>
-            </div>
-          )}
-        </form>
+            <button type="submit" className="submit-btn">
+              Submit Application
+            </button>
+          </form>
+          </div>
         )}
       </section>
     </div>

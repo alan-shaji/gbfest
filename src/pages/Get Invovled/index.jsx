@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./index.css";
 
 const GetInvolved = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
+
 
   return (
     <section className="get-involved">
@@ -14,9 +19,9 @@ const GetInvolved = () => {
       <div className="involved-row row-reverse">
         <img src="/gbfest/sponsor.png" alt="Sponsorship" />
         <div className="involved-content">
-          <h2>Sponsorship</h2>
+          <h2>Partnership </h2>
           <p>
-      Sponsorship is the backbone of Global Fest. Your contribution directly
+      Partnership is the backbone of Global Fest. Your contribution directly
       supports cultural performances, community outreach, and the creation of
       inclusive spaces where diverse voices can be heard. By sponsoring, you
       align your brand with values of unity, diversity, and celebration.
@@ -27,7 +32,9 @@ const GetInvolved = () => {
       thousands of attendees. Together, we can build a festival that leaves a
       lasting impact.
     </p>
-          <button className="involved-btn">Become a Sponsor</button>
+          <button className="involved-btn"
+          onClick={() => navigate("/partner")}>
+            Become a Partner</button>
         </div>
       </div>
 

@@ -7,7 +7,7 @@ const EventLocation = () => {
       <h2>Where the Event Is Happening</h2>
 
       <p className="location-intro">
-        Global Fest 2026 will take place in the heart of Toronto, bringing
+        Global Fest Canada 2026 will take place in the heart of Toronto, bringing
         together communities from across the city for a vibrant celebration of
         culture, music, food, and art. The venue is easily accessible by public
         transit, with plenty of nearby amenities for families and visitors.

@@ -1,46 +1,41 @@
-.volunteer-page {
+.sponsor-page {
   max-width: 700px;
   margin: 3rem auto;
   padding: 2rem;
   text-align: center;
 }
 
-.volunteer-page h1 {
+.sponsor-page h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
   color: #0b132b;
 }
 
-.intro-text {
-  margin-bottom: 1.5rem;
+.sponsor-intro {
+  margin-bottom: 2rem;
+  font-size: 1rem;
   color: #555;
 }
 
-.benefits-list {
-  text-align: left;
-  margin-bottom: 2rem;
-  color: #333;
-  line-height: 1.6;
-}
-
-.volunteer-form {
+.sponsor-form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   text-align: left;
 }
 
-.volunteer-form label {
+/* Labels + spacing */
+.sponsor-form label {
   display: flex;
   flex-direction: column;
   font-size: 0.95rem;
   font-weight: 500;
   color: #333;
+  margin-bottom: 1.2rem;
 }
 
-.volunteer-form input,
-.volunteer-form select,
-.volunteer-form textarea {
+.sponsor-form label input,
+.sponsor-form label textarea {
   margin-top: 0.6rem;
   border: none;
   border-bottom: 2px solid #ccc;
@@ -51,25 +46,24 @@
   transition: border-color 0.3s ease;
 }
 
-.volunteer-form input:focus,
-.volunteer-form select:focus,
-.volunteer-form textarea:focus {
+.sponsor-form label input:focus,
+.sponsor-form label textarea:focus {
   border-bottom-color: #3a506b;
 }
 
-.radio-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-  margin-top: 0.6rem;
+.sponsor-form textarea {
+  resize: none;
+  min-height: 100px;
 }
 
+/* Error messages */
 .error {
   color: #d9534f;
   font-size: 0.85rem;
   margin-top: 0.3rem;
 }
 
+/* Submit button */
 .submit-btn {
   background: linear-gradient(to right, #0b132b, #3a506b);
   color: #fff;
@@ -87,25 +81,27 @@
   transform: scale(1.05);
 }
 
-.success-box {
-  background: #e8f8f0;
-  border-left: 4px solid #2e8b57;
-  padding: 1.5rem;
-  border-radius: 6px;
-  margin-bottom: 2rem;
-  text-align: left;
-  color: #2e8b57;
-  font-weight: 600;
-}
-
+/* Responsive */
 @media (max-width: 600px) {
-  .volunteer-page {
+  .sponsor-page {
     padding: 1rem;
   }
 
   .submit-btn {
     width: 100%;
+    text-align: center;
   }
+}
+
+.success-box {
+  background: #e8f8f0;
+  border-left: 4px solid #2e8b57;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  color: #2e8b57;
+  font-weight: 600;
+  border-radius: 6px;
+  text-align: left;
 }
 .form-shadow-box {
   background: #ffffff;
