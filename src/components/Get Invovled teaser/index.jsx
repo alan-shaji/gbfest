@@ -26,7 +26,9 @@ const GetInvolvedTeaser = () => {
             Become a food vendor and showcase global fusion dishes — from Asian street eats
             to Caribbean and Mediterranean favorites. Share your culinary story with thousands.
           </p>
-          <button className="teaser-btn">Become a Food Vendor</button>
+          <button className="teaser-btn" onClick={() => navigate("vendor")}
+            >
+              Become a Food Vendor</button>
         </div>
 
         <div className="promo-column">
@@ -51,7 +53,10 @@ const GetInvolvedTeaser = () => {
             We invite artists and performers to showcase their culture through live music, dance, and performance. 
             Join us in celebrating heritage, creativity, and community on a shared stage that brings cultures together.
           </p>
-          <button className="teaser-btn">Become a Performer</button>
+          <button className="teaser-btn"
+          onClick={() => navigate("artist")} 
+          >
+            Become a Performer</button>
         </div>
       </div>
 

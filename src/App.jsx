@@ -47,6 +47,8 @@ import VolunteerPage from "./pages/volunteer page";
 import GetInvolved from "./pages/Get Invovled";
 import ContactUs from "./components/Contact Us";
 import SponsorForm from "./pages/Sponsorship page";
+import ArtistForm from "./pages/artist page";
+import VendorForm from "./pages/vendor";
 
 function App() {
   return (
@@ -59,6 +61,8 @@ function App() {
         <Route path="/getinvolved" element={<GetInvolved />} />
         <Route path="contactUs" element={<ContactUs />} />
         <Route path="partner" element={<SponsorForm />} />
+        <Route path="artist" element={<ArtistForm />} />
+        <Route path="vendor" element={<VendorForm />} />
         {/* add more pages here */}
       </Route>
     </Routes>

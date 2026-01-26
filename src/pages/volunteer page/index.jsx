@@ -228,8 +228,8 @@ const VolunteerPage = () => {
                 <option value="">— Select a Position —</option>
                 <option value="logistics">Logistics</option>
                 <option value="stage-setup">Stage Setup</option>
-                <option value="guest-support">Guest Support</option>
-                <option value="cultural-activities">Cultural Activities</option>
+                <option value="guest-experience">Guest Experience</option>
+                <option value="social-media-and-content-creation">Social Media and Content Creation </option>
               </select>
               {errors.position && <span className="error">{errors.position}</span>}
             </label>

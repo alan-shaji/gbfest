@@ -55,7 +55,9 @@ const GetInvolved = () => {
       benefit from exposure to a diverse audience eager to discover new
       experiences.
     </p>
-          <button className="involved-btn">Join as a Vendor</button>
+          <button className="involved-btn" 
+          onClick={() => navigate("/vendor")}
+            >Join as a Vendor</button>
         </div>
       </div>
 
@@ -82,6 +84,29 @@ const GetInvolved = () => {
           >
             Join as a Volunteer
           </button>
+        </div>
+      </div>
+       {/* Vendors (image left) */}
+      <div className="involved-row">
+        <img src="/gbfest/cultural.jpg" alt="artist" />
+        <div className="involved-content">
+          <h2>Artist</h2>
+          <p>
+  Artists and performers bring Global Fest to life through music, dance, and
+  creative expression. Your performances set the rhythm of the festival,
+  immersing audiences in the sounds, movements, and stories of cultures from
+  around the world.
+</p>
+<p>
+  Being a performer is more than taking the stage — it’s about sharing identity
+  and emotion. Each performance reflects tradition, talent, and innovation,
+  creating powerful moments of connection with festival goers. Artists also
+  gain exposure to a diverse audience eager to experience global artistry and
+  celebrate cultural expression.
+</p>
+
+          <button className="involved-btn"  onClick={() => navigate("/artist")} >
+            Join as a Artist</button>
         </div>
       </div>
     </section>
