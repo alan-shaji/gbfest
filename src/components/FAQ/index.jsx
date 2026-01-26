@@ -10,24 +10,24 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "What is Global Fest 2026?",
+      question: "Who is Global Fest Canada for?",
       answer:
-        "Global Fest 2026 is a multicultural celebration featuring performances, food, vendors, and community activities that highlight the diversity of Toronto."
+        "Global Fest Canada is for everyone — community members, families, artists, youth, and visitors who want to experience and celebrate diverse cultures."
     },
     {
-      question: "How can I participate as a volunteer?",
+      question: "What types of performances can audiences expect?",
       answer:
-        "You can join our volunteer team by filling out the volunteer form. Volunteers help with event setup, guest support, logistics, and more."
+        "Audiences can expect a variety of live performances including music, dance, and cultural showcases representing traditions from around the world."
     },
     {
-      question: "How do I become a vendor?",
+      question: "Can emerging or youth artists participate?",
       answer:
-        "Vendors can apply through our vendor registration process. We welcome food stalls, artisans, cultural crafts, and unique products."
+        "Yes.Global Fest Canada encourages participation from emerging and youth artists, providing a platform for new voices and creative expression."
     },
     {
-      question: "Can my business sponsor the event?",
+      question: "What types of vendors are welcome?",
       answer:
-        "Yes! Sponsorship opportunities are available for businesses of all sizes. Sponsors receive visibility, branding, and community engagement benefits."
+        "We welcome food vendors, artisans, cultural exhibitors, and community organizations that align with the festival’s values of diversity and inclusion."
     },
     {
   question: "Is entry to Global Fest 2026 free?",
@@ -38,8 +38,12 @@ const FAQ = () => {
   question: "What happens if it rains during the event?",
   answer:
     "The festival continues rain or shine. We have weather‑ready plans in place, including covered areas, tents, and adjusted schedules if needed. Performances and activities may shift slightly, but the celebration will still go on."
+},
+{
+  question: "How can I stay informed about announcements and deadlines?",
+  answer:
+    "Follow Global Fest Canada on social media to stay up to date with the latest news and announcements."
 }
-
   ];
 
   return (

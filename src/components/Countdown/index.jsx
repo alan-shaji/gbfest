@@ -3,7 +3,7 @@ import "./index.css";
 
 const Countdown = () => {
   // Target date for Global Fest (example: June 1, 2026)
-  const targetDate = new Date("2026-06-01T00:00:00");
+  const targetDate = new Date("2026-06-21T00:00:00");
 
   const calculateTimeLeft = () => {
     const difference = targetDate - new Date();

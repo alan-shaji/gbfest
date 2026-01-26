@@ -11,10 +11,10 @@ const AboutUsPreview = () => {
       <p>
         Global Fest Toronto is a multicultural festival that celebrates the people, stories, and traditions that make our city so unique. From traditional performances to modern fusion acts, from street food to global fashion, we bring communities together in one inclusive, family-friendly event.
       </p>
-      {/* <button className="read-more-btn" onClick={() => navigate("/about")}>
+      {/* <button className="read-more-btn" onClick={() => navigate("/gbfest/about")}>
         Read More
       </button> */}
-      <a href="/about" className="read-more-btn">Read More</a>
+      <a href="/gbfest/about" className="read-more-btn">Read More</a>
 
     </section>
   );

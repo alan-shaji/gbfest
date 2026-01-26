@@ -1,20 +1,34 @@
 import React from "react";
-import "./index.css"
-import MenuTab from "../../components/MenuTab/";
+import "./index.css";
 
 const AboutUsDetail = () => {
   return (
     <div className="about-detail-page">
-      <h1>About Global Fest Toronto</h1>
-      <p>
-        Global Fest Toronto 2026 is a youth-led, community-powered celebration of diversity, creativity, and connection. We bring together cultures through music, dance, global cuisines, VR activations, and artistic performances.
+      <div className="about-header">
+        <h1>About Global Fest Canada</h1>
+        <div className="accent-line"></div>
+      </div>
+
+      <p className="about-text">
+        IYC Canada leads youth empowerment and cultural engagement across Toronto, supporting newcomers and diverse communities through impactful programs and events.
+        Partnering with Levitate Entertainment, we bring these values to life through major multicultural festivals that unite audiences and offer strong activation opportunities for sponsors.
       </p>
-      <p>
-        Organized by <strong>International Youth of Canada</strong> and produced by <strong>Levitate Events</strong>, this one-day festival is designed to empower young voices and showcase the vibrancy of Toronto’s multicultural spirit.
-      </p>
-      <p>
-        From traditional performances to modern fusion acts, from street food to global fashion, Global Fest is a platform for storytelling, celebration, and community building.
-      </p>
+
+      <div className="about-section">
+        <h1>OUR VISION</h1>
+        <div className="accent-line small"></div>
+        <p className="about-text">
+          To create a globally connected community where youth and diverse cultures unite through creativity , innovation and shared celebration.
+        </p>
+      </div>
+
+      <div className="about-section">
+        <h1>OUR MISSION</h1>
+        <div className="accent-line small"></div>
+        <p className="about-text">
+          To empower multicultural communities by providing inclusive platforms that amplify culture, opportunity and collective impact.
+        </p>
+      </div>
     </div>
   );
 };

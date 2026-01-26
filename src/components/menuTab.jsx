@@ -48,7 +48,7 @@ function MenuTab() {
     <nav className="menu-tab">
       <div className="menu-logo">
         <img src="/gbfest/logo.png" alt="Logo" />
-        <span>Global Fest 2026</span>
+        <span>Global Fest Canada 2026</span>
       </div>
 
       {/* Hamburger toggle */}
@@ -65,7 +65,7 @@ function MenuTab() {
       <ul className={`menu-links ${menuOpen ? "active" : ""}`}>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About Us</Link></li>
-        <li><Link to="/program">Program</Link></li>
+        {/* <li><Link to="/program">Program</Link></li> */}
         <li><Link to="/getinvolved">Get Involved</Link></li>
         <li><Link to="/contactUs">Contact Us</Link></li>
       </ul>

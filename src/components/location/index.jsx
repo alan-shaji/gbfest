@@ -16,16 +16,16 @@ const EventLocation = () => {
       <div className="location-tile">
         <div className="location-details">
           <h3>📍 Venue</h3>
-          <p>Nathan Phillips Square, Toronto</p>
+          <p>Sankofa Square, Toronto</p>
 
           <h3>🗓 Date</h3>
-          <p>August 15–17, 2026</p>
+          <p>June 21, 2026</p>
 
           <h3>⏰ Time</h3>
-          <p>10:00 AM – 10:00 PM daily</p>
+          <p>10:00 AM – 10:00 PM</p>
 
-          <h3>🚇 Transit</h3>
-          <p>Steps away from Queen Station (Line 1)</p>
+          {/* <h3>🚇 Transit</h3>
+          <p>Steps away from Queen Station (Line 1)</p> */}
         </div>
 
         <div className="location-map">

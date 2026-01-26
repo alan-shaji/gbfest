@@ -74,26 +74,26 @@ const Footer = () => {
           <div className="footer-logo">
             <span className="footer-caption">Organized by</span>
             <img src="/gbfest/iyc-logo.png" alt="International Youth Canada" />
-            <span className="footer-caption">International Youth Canada</span>
+            {/* <span className="footer-caption">International Youth Canada</span> */}
           </div>
           <div className="footer-logo">
             <span className="footer-caption">Powered by</span>
             <img src="/gbfest/levitate-logo.png" alt="Levitate Entertainment" />
-            <span className="footer-caption">Levitate Entertainment</span>
+            {/* <span className="footer-caption">Levitate Entertainment</span> */}
           </div>
         </div>
 
         {/* Center contact info */}
         <div className="footer-center">
           <h3 className="footer-heading">Contact Us</h3>
-          <p>📞 +1 (647) 781-3743</p>
-          <p>✉️ Contact@levitateinc.ca</p>
+          <p>📞 +1 (705) 930-6692</p>
+          <p>✉️ contact@canadaglobalfest.ca </p>
         </div>
 
         {/* Right social + button */}
         <div className="footer-right">
           <div className="footer-social">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://instagram.com" target="https://www.instagram.com/globalfestcanada/" rel="noopener noreferrer">
               <FaInstagram />
             </a>
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
@@ -105,7 +105,7 @@ const Footer = () => {
           </div>
           {/* ✅ Use Link instead of button */}
           <Link to="/volunteer" className="join-btn">
-            Join Our Team
+            Join as a Volunteer
           </Link>
         </div>
       </div>
