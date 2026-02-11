@@ -18,8 +18,8 @@ const ArtistForm = () => {
   const [errors, setErrors] = useState({});
   const [success, setSuccess] = useState(false);
 
-  const GOOGLE_SHEETS_URL = "GOOGLE_SCRIPT_URL";
-  const AWS_SES_URL = "AWS_API_GATEWAY_URL";
+  const GOOGLE_SHEETS_URL = "https://9zmqqiw8v1.execute-api.ca-central-1.amazonaws.com/sheets";
+  const AWS_SES_URL = "https://dosyckykz8.execute-api.ca-central-1.amazonaws.com/prod/artist";
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -95,10 +95,17 @@ const ArtistForm = () => {
     if (hasErrors) return;
 
     try {
+        formData.formType = "artist";
+    //   await fetch(GOOGLE_SHEETS_URL, {
+    //     method: "POST",
+    //     body: JSON.stringify(formData),
+    //   });
       await fetch(GOOGLE_SHEETS_URL, {
-        method: "POST",
-        body: JSON.stringify(formData),
-      });
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(formData),
+});
+
 
       await fetch(AWS_SES_URL, {
         method: "POST",

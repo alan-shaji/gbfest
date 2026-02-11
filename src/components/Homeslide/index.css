@@ -119,11 +119,12 @@ body, html {
 /* Responsive layout adjustments */
 @media (max-width: 768px) {
   .hero-section {
+    background: url("/images/banner-mobile.jpg") center center / cover no-repeat;
     height: auto;
     min-height: 100vh;
     width: 100vw;
     padding: 1rem;
-    background-position: center top;
+    background-position: center top; 
     background-size: cover;
     display: flex;
     align-items: center;

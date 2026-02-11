@@ -158,8 +158,8 @@ const SponsorForm = () => {
   const [errors, setErrors] = useState({});
   const [success, setSuccess] = useState(false);
 
-  const GOOGLE_SHEETS_URL = "GOOGLE_SCRIPT_URL";
-  const AWS_SES_URL = "AWS_API_GATEWAY_URL";
+  const GOOGLE_SHEETS_URL = "https://9zmqqiw8v1.execute-api.ca-central-1.amazonaws.com/sheets";
+  const AWS_SES_URL = "https://x7j84n0x5m.execute-api.ca-central-1.amazonaws.com/prod/sponsor";
 
   // Scroll to top when page loads
   useEffect(() => {
@@ -233,10 +233,12 @@ const SponsorForm = () => {
 
     try {
       // Google Sheets
-      await fetch(GOOGLE_SHEETS_URL, {
-        method: "POST",
-        body: JSON.stringify(formData),
-      });
+      formData.formType = "sponsor";
+       await fetch(GOOGLE_SHEETS_URL, {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(formData),
+});
 
       // AWS SES
       await fetch(AWS_SES_URL, {

@@ -58,7 +58,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="about" element={<AboutUsDetail />} />
         <Route path="volunteer" element={<VolunteerPage />} />
-        <Route path="/getinvolved" element={<GetInvolved />} />
+        <Route path="getinvolved" element={<GetInvolved />} />
         <Route path="contactUs" element={<ContactUs />} />
         <Route path="partner" element={<SponsorForm />} />
         <Route path="artist" element={<ArtistForm />} />

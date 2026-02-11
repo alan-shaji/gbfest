@@ -62,13 +62,20 @@ function MenuTab() {
       </div>
 
       {/* Navigation links */}
-      <ul className={`menu-links ${menuOpen ? "active" : ""}`}>
+      {/* <ul className={`menu-links ${menuOpen ? "active" : ""}`}>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About Us</Link></li>
+        <li><Link to="/about">About Us</Link></li> */}
         {/* <li><Link to="/program">Program</Link></li> */}
-        <li><Link to="/getinvolved">Get Involved</Link></li>
+        {/* <li><Link to="/getinvolved">Get Involved</Link></li>
         <li><Link to="/contactUs">Contact Us</Link></li>
-      </ul>
+      </ul> */}
+      <ul className={`menu-links ${menuOpen ? "active" : ""}`}>
+  <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
+  <li><Link to="/about" onClick={() => setMenuOpen(false)}>About Us</Link></li>
+  <li><Link to="/getinvolved" onClick={() => setMenuOpen(false)}>Get Involved</Link></li>
+  <li><Link to="/contactUs" onClick={() => setMenuOpen(false)}>Contact Us</Link></li>
+</ul>
+
     </nav>
   );
 }
