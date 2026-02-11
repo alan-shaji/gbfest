@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./index.css";
 
 const AboutUsDetail = () => {
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
+
   return (
     <div className="about-detail-page">
       <div className="about-header">
