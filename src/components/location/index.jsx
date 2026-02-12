@@ -31,11 +31,11 @@ const EventLocation = () => {
         <div className="location-map">
           <iframe
             title="Global Fest Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.512770930934!2d-79.3853609239353!3d43.65348167110264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d6b7f7f0d7%3A0xdbc1e2d2f6c6714!2sNathan%20Phillips%20Square!5e0!3m2!1sen!2sca!4v1700000000000"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.620422278078!2d-79.38287592505363!3d43.656065052247406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34cad13905ff%3A0xfba1e6ac7018788a!2sSankofa%20Square!5e0!3m2!1sen!2sca!4v1770862207793!5m2!1sen!2sca"
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+          ></iframe>  
         </div>
       </div>
     </section>
