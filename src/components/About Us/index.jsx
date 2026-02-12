@@ -15,7 +15,14 @@ const AboutUsPreview = () => {
         Read More
       </button> */}
 
-      <a href="/gbfest/about" className="read-more-btn">Read More</a>
+      {/* <a href="/gbfest/about" className="read-more-btn">Read More</a> */}
+      <button
+  className="read-more-btn"
+  onClick={() => navigate("/about")}
+>
+  Read More
+</button>
+
 
     </section>
   );
